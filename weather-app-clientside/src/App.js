@@ -6,6 +6,10 @@ function App() {
   const [location, setLocation] = useState('')
   
   const url = `${process.env.REACT_APP_API_URL}?q=${location}&units=imperial&appid=${process.env.REACT_APP_API_KEY}`;
+  //Enter your own API key from OpenWeatherMap
+  // const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units
+
+
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
